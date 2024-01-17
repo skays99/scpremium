@@ -37,9 +37,9 @@ getgenv().Configs = {
     AutoDarkDagger = true,
     AutoYama = true,
     AutoCanvander = true,
-    AutoSoulGuitar = true, 
+    AutoSoulGuitar = false, 
     AutoRainbowHaki = false,
-    AutoCursedDualKatana = true,
+    AutoCursedDualKatana = false,
     
     -- Fighting Style 
     
