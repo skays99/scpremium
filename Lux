@@ -1,115 +1,22 @@
 if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
--- ปรับ true = เปิด
--- ปรับ false = ปิด
+_G.Delay_Upload = 300
+_G.Bypass_Tp = true
 
-getgenv().Faster = {
-    ['CDK Super Fast'] = true,
-    ['Buy Color Haki'] = 3
-}
-
-getgenv().RAM = {
-    ['Enabled'] = true,
-    ['Delay'] = 600
-}
-
-getgenv().Setting = {
-    ['FPS Booster'] = true,
-    ['White Screen'] = true,
-    ['Disible Gui'] = false,
-    ['AFK Check'] = 150,
-    ['Lock Fruit'] = 1000000,
-    ['Rejoin'] = false
-}
-
-getgenv().Quest = {
-    ['RGB Haki'] = true,
-    ['Evo Race'] = {
-        ['Enabled'] = false,
-        ['Level'] = {1,2,3}
-    },
-    ['Quest Dough Awaken'] = {
-        ['Enabled'] = true,
-        ['Fast Mode'] = true
-    },
-    ['Kill Boss'] = true,
-    ['Quest Race V4'] = false
-}
-
-getgenv().Fruit = { -- เลือกผลปีศาจ
+_G.Select_Fruit = {
     ['Main'] = {'Dough-Dough'},
-    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'},
-    ['Bring Fruit'] = true
+    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'}
 }
-
-getgenv().Melee = {
-    ['Superhuman'] = true,
-    ['Death Step'] = true,
-    ['Sharkman Karate'] = true,
-    ['Electric Claw'] = true,
-    ['Dragon Talon'] = true,
-    ['Godhuman'] = true
-}
-
-getgenv().Sword = {
-    ['Saber'] = true,
-    ['Midnight Blade'] = true,
-    ['Shisui'] = true,
-    ['Saddi'] = true,
-    ['Wando'] = true,
-    ['Yama'] = true,
-    ['Koko'] = false,
-    ['Rengoku'] = true,
-    ['Canvander'] = true,
-    ['Buddy Sword'] = true,
-    ['Twin Hooks'] = true,
-    ['SpikeyTrident'] = true,
-    ['Hallow Scryte'] = true,
-    ['Dark Dagger'] = true,
-    ['Tushita'] = true,
-    ['True Triple Katana'] = true,
-    ['Cursed Dual Katana'] = true
-}
-
-getgenv().Gun = { -- ฟาร์มปืน
-    ['Kabucha'] = true,
-    ['Acidum Rifle'] = true,
-    ['Soul Guitar'] = true,
-    ['Serpent Bow'] = true
-}
-
-getgenv().Mastery = {
+_G.Mastery_Farm = { -- ฟามมาสเตอรี่
     ['Melee'] = true,
-    ['Fruit'] = true,
-
-    ['Sword'] = true,
-    ['Setting Sword'] = {
-        [1] = "Tushita",
-        [2] = "Hallow Scythe",
-        [3] = "Spikey Trident",
-        [4] = "Dark Dagger",
-        [5] = "Buddy Sword",
-        [6] = "Yama",
-        [7] = "Shisui",
-        [8] = "Saddi",
-        [9] = "Wando",
-        [10] = "True Triple Katana",
-        [11] = "Cursed Dual Katana",
-        [12] = "Midnight Blade",
-        [13] = "Rengoku",
-        [14] = "Saber",
-        [15] = "Canvander"
-    },
-
-    ['Gun'] = true,
-    ['Setting Gun'] = {
-        [1] = 'Soul Guitar',
-        [2] = 'Kabucha',
-        [3] = 'Acidum Rifle',
-        [4] = 'Serpent Bow'
-    }
+    ['Devil Fruit'] = true,
+    ['Sword'] = false,
+    ['Gun'] = false
+}
+_G.Race_Evo = {
+    ['Level'] = {1,2,3},
+    ['Enabled'] = false
 }
 
-_G.On_Next_Generation = true
 script_key="lWbNnjWEWscaosujtsQBlRgRVhdVeVDB";
-loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/nextgeneration.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
