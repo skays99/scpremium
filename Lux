@@ -10,7 +10,7 @@ _G.Select_Fruit = {
 _G.Mastery_Farm = { -- ฟามมาสเตอรี่
     ['Melee'] = true,
     ['Devil Fruit'] = true,
-    ['Sword'] = false,
+    ['Sword'] = true,
     ['Gun'] = false
 }
 _G.Race_Evo = {
