@@ -1,1 +1,22 @@
+if not game:IsLoaded() then repeat game.Loaded:Wait() until game:IsLoaded() end
 
+_G.Delay_Upload = 300
+_G.Bypass_Tp = true
+
+_G.Select_Fruit = {
+    ['Main'] = {'Dough-Dough'},
+    ['Select Fruit'] = {'Dark-Dark','Human-Human: Buddha','Sand-Sand','Magma-Magma'} -- เลือกผลปีศาจ
+}
+_G.Mastery_Farm = { -- ฟามมาสเตอรี่
+    ['Melee'] = true,
+    ['Devil Fruit'] = false,
+    ['Sword'] = true,
+    ['Gun'] = false
+}
+_G.Race_Evo = {
+    ['Level'] = {1,2,3},
+    ['Enabled'] = false
+}
+
+script_key="lWbNnjWEWscaosujtsQBlRgRVhdVeVDB";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/londnee/code/main/m.lua"))()
