@@ -37,9 +37,9 @@ getgenv().Configs = {
     AutoDarkDagger = true,
     AutoYama = true,
     AutoCanvander = true,
-    AutoSoulGuitar = true, 
+    AutoSoulGuitar = false, 
     AutoRainbowHaki = true,
-    AutoCursedDualKatana = true,
+    AutoCursedDualKatana = false,
     
     -- Fighting Style 
     
@@ -64,12 +64,12 @@ getgenv().Configs = {
     
     -- Raids
     
-    SelectRateFruitRaid = 1000000, -- if fruit price less u rate then we use it to auto raids
-    LimitFragmentsRaids = 100000,
+    SelectRateFruitRaid = 880000, -- if fruit price less u rate then we use it to auto raids
+    LimitFragmentsRaids = 50000,
     
     -- Devil Fruit
         
-    SelectMainDF = {"Dragon-Dragon","Spirit-Spirit","Venom-Venom","Dough-Dough"},
+    SelectMainDF = {"Light-Light"},
     SelectSubDF = {"Ice-Ice","Sand-Sand","Dark-Dark","Quake-Quake","Light-Light"},
     AllowEatDFInventory = true,
     StartSniper = true,
@@ -88,7 +88,7 @@ getgenv().Configs = {
     
     -- CPU
     
-    LockFPS = 45,
+    LockFPS = 30,
     LockFPSNow = true,
     WhiteScreen = true
 }
